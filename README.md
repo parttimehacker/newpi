@@ -10,14 +10,16 @@ I strongly recommend creating a **newuser**, logout of **pi**; login to the **ne
 Usage
 -----
 
-- Flash the latest Raspberry Pi image to an SDIO card 
+- Flash the latest Raspberry Pi image to an SDIO card and then update the mounted boot drive
 
 ```
 cd /Volumes/boot
 touch ssh
+- Edit the wpa supplicant file
+'''
 vi wpa_supplicant.conf
 ```
-- Add the following and add your network information
+- Edit SSID and PASSWORD for your network
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -31,11 +33,13 @@ key_mgmt=WPA-PSK
 - Login as **pi** and get the latest firmware update `sudo rpi-update` then reboot again
 - Now you need to execute `sudo raspi-config` to set up password, hostname, localization, time zone, and interfaces like camera, SPI and I2C buses
 - After booting one more time, clone the newpi repository
-```git clone https://github.com/parttimehacker/newpi.git
+```
+git clone https://github.com/parttimehacker/newpi.git
 ./step1.sh
 ```
 - Create a **newuser** 
-```sudo useradd -m newuser -G sudo
+```
+sudo useradd -m newuser -G sudo
 sudo passwd newuser
 sudo visudo
 ```
