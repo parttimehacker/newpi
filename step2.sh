@@ -6,7 +6,7 @@
 # 
 # Purpose:fresh install script for Raspberry Pi step 2 of 3
 # 
-# Notes:
+# Notes: install python modules, tools and mqtt support
 # 
 sudo apt-get install -y python-pip git
 sudo apt-get install -y build-essential python-dev python-smbus

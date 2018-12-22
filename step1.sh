@@ -6,7 +6,7 @@
 # 
 # Purpose:fresh install script for Raspberry Pi step 1 of 3 
 # 
-# Notes:
+# Notes: get the latest packages and set up file sharing
 # 
 sudo apt-get update
 sudo apt-get -y upgrade 

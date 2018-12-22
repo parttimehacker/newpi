@@ -6,7 +6,7 @@
 # 
 # Purpose:fresh install script for Raspberry Pi step 3 of 3
 # 
-# Notes:
+# Notes: install my three favorite adafruit support modules
 # 
 
 mkdir systemd
