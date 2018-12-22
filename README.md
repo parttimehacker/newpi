@@ -5,18 +5,19 @@ This repository contains instructions and bash scripts I use to configure new Ra
 
 At this point you should clone newpi into the **pi** user home directory. Run the `./step1.sh` bash script to get upgrades and set up file sharing on the network.
 
-I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. Then download and run `./step2.sh` and `./step3.sh` to completes my baseline Raspberry Pi system.
+I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. Then clone and run `./step2.sh` and `./step3.sh` to complete my baseline Raspberry Pi headless server.
 
 Usage
 -----
 
-- Flash the latest Raspberry Pi image to an SDIO card and then update the mounted boot drive
+- Flash the latest Raspberry Pi image to an SD card and then update the mounted boot drive
 
 ```
 cd /Volumes/boot
 touch ssh
+```
 - Edit the wpa supplicant file
-'''
+```
 vi wpa_supplicant.conf
 ```
 - Edit SSID and PASSWORD for your network
