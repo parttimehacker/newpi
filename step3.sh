@@ -14,6 +14,7 @@ echo
 echo "psutil installed for diysysem"
 echo
 
+cd
 mkdir systemd
 cd systemd
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
