@@ -9,6 +9,11 @@
 # Notes: install my three favorite adafruit support modules
 # 
 
+sudo apt-get -y install psutil
+echo
+echo "psutil installed for diysysem"
+echo
+
 mkdir systemd
 cd systemd
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
