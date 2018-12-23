@@ -38,8 +38,15 @@ key_mgmt=WPA-PSK
 sudo vi /etc/default/console-setup
 ```
 - Change `FONTFACE="Terminus"` and `FONTSIZE="16x32"` exit and save your edits and then `sudo reboot`
-- After booting one more time, clone the newpi repository
+- I recommend creating step1.sh with your exitor `vi step1.sh`; copy and paste the bash script and save the file
 ```
+vi step1.sh
+chmod +x step1.sh
+./step1.sh
+```
+- Reboot again; install **git** and clone the **newpi* repository
+```
+sudo apt-get install git
 git clone https://github.com/parttimehacker/newpi.git
 ./step1.sh
 ```
