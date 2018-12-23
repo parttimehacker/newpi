@@ -11,6 +11,7 @@
 sudo apt-get install -y python-pip git
 sudo apt-get install -y build-essential python-dev python-smbus
 sudo apt-get install i2c-tools
+sudo apt-get install -y pylint
 sudo sync
 echo 
 echo "basic python install complete"
