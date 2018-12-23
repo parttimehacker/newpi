@@ -56,7 +56,8 @@ sudo useradd -m newuser -G sudo
 sudo passwd newuser
 sudo visudo
 ```
-- You may have to edit /etc/passwd to add /bin/bash to the new user. 
+- Add a no password required for **newuser** at the bottom `sudo newuser ALL=NOPASSWD: ALL`
+- You may have to edit /etc/passwd to add `/bin/bash` to the new **useruser**. 
 - Logout and login as the **newuser**
 - Remove the **pi** user and /home/pi:
 `sudo deluser -remove-home pi`
