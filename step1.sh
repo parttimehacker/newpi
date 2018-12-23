@@ -23,6 +23,9 @@ sudo sync
 echo
 echo "avihi and netatalk complete"
 echo
+
+sudo apt-get -y install git
+echo
+echo "installed git"
 echo "reboot required"
 echo "then step 2"
-
