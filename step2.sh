@@ -8,7 +8,7 @@
 # 
 # Notes: install python modules, tools and mqtt support
 # 
-sudo apt-get install -y python-pip git
+sudo apt-get install -y python-pip
 sudo apt-get install -y build-essential python-dev python-smbus
 sudo apt-get install i2c-tools
 sudo apt-get install -y pylint
