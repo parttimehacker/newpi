@@ -9,7 +9,7 @@
 # Notes: install my three favorite adafruit support modules
 # 
 
-sudo apt-get -y install psutil
+sudo pip install psutil
 echo
 echo "psutil installed for diysysem"
 echo
