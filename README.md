@@ -46,9 +46,9 @@ chmod +x step1.sh
 ```
 - Reboot again; install **git** and clone the **newpi* repository
 ```
-sudo apt-get install git
+sudo apt-get -y install git
 git clone https://github.com/parttimehacker/newpi.git
-./step1.sh
+./step2.sh
 ```
 - Create a **newuser** 
 ```
@@ -63,7 +63,6 @@ sudo visudo
 - Complete the configuration with Python development enviroment and some of my favorite moduels
  ```
  git clone https://github.com/parttimehacker/newpi.git
- ./step2.sh
  ./step3.sh
  ```
      
