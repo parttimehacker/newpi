@@ -42,7 +42,9 @@ sudo raspi-config
 ```
 - If the terminal font is too small then you can change it from the command line
 ```
-sudo vi /etc/default/console-setup change the following, exit and save your edits, then reboot
+sudo vi /etc/default/console-setup 
+```
+- Enter the following, save and exit
 ```
 FONTFACE="Terminus
 FONTSIZE="16x32"
