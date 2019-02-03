@@ -35,7 +35,7 @@ key_mgmt=WPA-PSK
 ```
 sudo rpi-update
 ```
-- Now you need to execute raspi-configto set up password, hostname, localization, time zone, and interfaces like camera, SPI and I2C buses
+- Now you need to execute raspi-config to set up a new password for pi user, a hostname, localization, time zone, and interfaces like camera, SPI and I2C buses
 
 ```
 sudo raspi-config 
