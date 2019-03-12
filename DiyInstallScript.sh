@@ -43,6 +43,8 @@ sudo pip3 install paho-mqtt
 sudo apt-get -y install python-imaging python-pil
 sudo python -m pip install --upgrade pip setuptools wheel
 sudo apt-get -y install git
+sudo pip3 install Pillow
+sudo apt-get install libfreetype6-dev libjpeg-dev libopenjp2-7-dev
 echo "================================"
 echo "Python package installation complete"
 sudo sync
@@ -55,15 +57,15 @@ mkdir systemd
 cd systemd
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 cd Adafruit_Python_GPIO
-sudo python setup.py install
+sudo python3 setup.py install
 cd ..
 git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
 cd Adafruit_Python_SSD1306
-sudo python setup.py install
+sudo python3 setup.py install
 cd ..
 git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack.git 
 cd Adafruit_Python_LED_Backpack
-sudo python setup.py install
+sudo python3 setup.py install
 cd ..
 echo "================================"
 echo "Adafruit installation complete"
