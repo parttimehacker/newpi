@@ -31,15 +31,6 @@ key_mgmt=WPA-PSK
 }
 ```
 - Unmount the SD card; insert into your Raspberry Pi and boot.  I like to use a monitor until I get everything up and running as a headless server. 
-- Login as **pi** and get the latest firmware update, then reboot again
-```
-sudo rpi-update
-```
-- Now you need to execute raspi-config to set up a new password for pi user, a hostname, localization, time zone, and interfaces like camera, SPI and I2C buses
-
-```
-sudo raspi-config 
-```
 - If the terminal font is too small then you can change it from the command line
 ```
 sudo vi /etc/default/console-setup 
@@ -48,6 +39,15 @@ sudo vi /etc/default/console-setup
 ```
 FONTFACE="Terminus
 FONTSIZE="16x32"
+```
+- Login as **pi** and get the latest firmware update, then reboot again
+```
+sudo rpi-update
+```
+- Now you need to execute raspi-config to set up a new password for pi user, a hostname, localization, time zone, and interfaces like camera, SPI and I2C buses
+
+```
+sudo raspi-config 
 ```
 - I recommend creating step1.sh with your exitor `vi step1.sh`; copy and paste the bash script and save the file
 ```
