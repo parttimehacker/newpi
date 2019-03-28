@@ -1,4 +1,11 @@
-# Adafruit libraries
+#/usr/bin/bash
+#
+# Script: adafruit_scripts.sh
+# Author: parttimehacker 
+# Date:   12/18/2018 
+# 
+# Purpose:fresh install script for Adafruit common classes 
+# 
 echo "Install common Adafruit classes"
 sudo pip install psutil
 cd
