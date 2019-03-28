@@ -7,7 +7,7 @@
 # Purpose:fresh install script for Adafruit common classes 
 # 
 echo "Install common Adafruit classes"
-sudo pip install psutil
+sudo pip3 install psutil
 cd
 mkdir systemd
 cd systemd
