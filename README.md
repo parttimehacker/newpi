@@ -5,7 +5,7 @@ This repository contains instructions and bash scripts I use to configure new Ra
 
 At this point you should clone newpi into the **pi** user home directory. Run the `./step1.sh` bash script to get upgrades and set up file sharing on the network.
 
-I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. Then clone and run `./step2.sh` and `./step3.sh` to complete my baseline Raspberry Pi headless server.
+I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. Then clone and run `./python3-and-flask.sh` and `./adafruit-scripts.sh` to complete my baseline Raspberry Pi headless server.
 
 Usage
 -----
@@ -49,7 +49,7 @@ sudo rpi-update
 ```
 sudo raspi-config 
 ```
-- I recommend creating step1.sh with your exitor `vi step1.sh`; copy and paste the bash script and save the file
+- I recommend creating step1.sh with your exitor `vi start-and-network.sh`; copy and paste the bash script and save the file
 ```
 vi start-and-network.sh
 chmod +x start-and-network.sh
@@ -71,6 +71,9 @@ sudo visudo
 ```
 sudo apt-get -y install git
 git clone https://github.com/parttimehacker/newpi.git
+```
+- Install development tools
+```
 chmod +x ./python3-and-flask.sh
 ./python3-and-flask.sh
 ```
@@ -81,8 +84,8 @@ Installation
 Requirements
 
 ```
-chmod +x adafruit-stuff.sh
-./adafruit-stuff.sh
+chmod +x adafruit-scripts.sh
+./adafruit-scripts.sh
 
 Licence
 -------
