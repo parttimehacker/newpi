@@ -51,15 +51,9 @@ sudo raspi-config
 ```
 - I recommend creating step1.sh with your exitor `vi step1.sh`; copy and paste the bash script and save the file
 ```
-vi step1.sh
-chmod +x step1.sh
-./step1.sh
-```
-- Reboot again; install **git** and clone the **newpi* repository
-```
-sudo apt-get -y install git
-git clone https://github.com/parttimehacker/newpi.git
-./step2.sh
+vi start-and-network.sh
+chmod +x start-and-network.sh
+./start-and-network.sh
 ```
 - Create a **newuser** 
 ```
@@ -73,25 +67,22 @@ sudo visudo
 - Remove the **pi** user and /home/pi:
 `sudo deluser -remove-home pi`
 - Complete the configuration with Python development enviroment and some of my favorite moduels
- ```
- git clone https://github.com/parttimehacker/newpi.git
- ./step3.sh
- ```
+- Reboot again; install **git** and clone the **newpi* repository
+```
+sudo apt-get -y install git
+git clone https://github.com/parttimehacker/newpi.git
+chmod +x ./python3-and-flask.sh
+./python3-and-flask.sh
+```
      
 Installation
 ------------
-
-        Follow this step as the Pi user
-        git clone https://github.com/parttimehacker/newpi.git
-        ./step1.sh
         
-        Follow these steps as the new user
-        git clone https://github.com/parttimehacker/newpi.git
-        ./step2.sh
-        ./step3.sh
-        
-
 Requirements
+
+```
+chmod +x adafruit-stuff.sh
+./adafruit-stuff.sh
 
 Licence
 -------
