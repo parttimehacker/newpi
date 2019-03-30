@@ -22,6 +22,7 @@ vi wpa_supplicant.conf
 ```
 - Edit SSID and PASSWORD for your network
 ```
+country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
@@ -49,12 +50,13 @@ sudo rpi-update
 ```
 sudo raspi-config 
 ```
-- I recommend creating step1.sh with your exitor `vi start-and-network.sh`; copy and paste the bash script and save the file
+- I recommend creating start-and-network.sh with your exitor `vi start-and-network.sh`; copy and paste the git bash script and save the file
 ```
 vi start-and-network.sh
 chmod +x start-and-network.sh
 ./start-and-network.sh
 ```
+- It is a good idea to reboot and test the network
 - Create a **newuser** 
 ```
 sudo useradd -m newuser -G sudo
