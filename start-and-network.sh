@@ -26,7 +26,7 @@ sudo sync
 
 # Step 2: Mac file stuff
 echo "Install Mac file sharing"
-sudo apt-get install avahi-daemon
+sudo apt-get -y install avahi-daemon
 sudo systemctl enable avahi-daemon.service
 sudo apt-get -y install netatalk
 sudo sync
