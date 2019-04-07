@@ -50,9 +50,14 @@ sudo rpi-update
 ```
 sudo raspi-config 
 ```
-- I recommend creating start-and-network.sh with your exitor `vi start-and-network.sh`; copy and paste the git bash script and save the file
+- Install git and then clone this repository
 ```
-vi start-and-network.sh
+sudo apt-get -y install git
+git clone https://github.com/parttimehacker/newpi.git
+```
+- Make start-and-network.sh executable and run this script
+```
+cd newpi
 chmod +x start-and-network.sh
 ./start-and-network.sh
 ```
@@ -70,10 +75,7 @@ sudo visudo
 `sudo deluser -remove-home pi`
 - Complete the configuration with Python development enviroment and some of my favorite moduels
 - Reboot again; install **git** and clone the **newpi* repository
-```
-sudo apt-get -y install git
-git clone https://github.com/parttimehacker/newpi.git
-```
+
 - Install development tools
 ```
 chmod +x ./python3-and-flask.sh
