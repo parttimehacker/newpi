@@ -73,11 +73,17 @@ sudo visudo
 - Logout and login as the **newuser**
 - Remove the **pi** user and /home/pi:
 `sudo deluser -remove-home pi`
+
 - Complete the configuration with Python development enviroment and some of my favorite moduels
-- Reboot again; install **git** and clone the **newpi* repository
+
+- Reboot again and install **git** and clone the **newpi* repository
 
 - Install development tools
 ```
+sudo apt -y install git-all
+git clone https://github.com/parttimehacker/newpi.git
+cd newpi
+sudo sync
 chmod +x ./python3-and-flask.sh
 ./python3-and-flask.sh
 ```
