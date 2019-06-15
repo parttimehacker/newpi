@@ -94,8 +94,8 @@ Installation
 Requirements
 
 ```
-chmod +x adafruit-scripts.sh
-./adafruit-scripts.sh
+chmod +x adafruit_scripts.sh
+./adafruit_scripts.sh
 
 Licence
 -------
