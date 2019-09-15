@@ -76,15 +76,22 @@ chmod +x ./python3-and-flask.sh
 
 ## Lets add some security
 
-- Create a **newuser** 
+- Create a **newuser** and password
 ```
 sudo useradd -m newuser -G sudo
 sudo passwd newuser
-sudo visudo
 ```
-- Add a no password required for **newuser** at the bottom `newuser ALL=NOPASSWD: ALL` and save
-- You may have to edit /etc/passwd to add `/bin/bash` to the new **useruser**. 
 
+- Add a no password required for **newuser** at the bottom
+```
+sudo visudo
+newuser ALL=NOPASSWD: ALL
+```
+- Save and then add /bin/bash to the **newuser**
+```
+sudo vi /etc/passwd
+/bin/bash
+```
 - Logout and login as the **newuser**
 
 - Remove the **pi** user and /home/pi:
