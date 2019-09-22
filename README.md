@@ -67,9 +67,8 @@ git clone https://github.com/parttimehacker/newpi.git
 - Make start-and-network.sh executable and run this script
 ```
 cd newpi
-chmod +x start-and-network.sh
+chmod +x *.sh
 ./start-and-network.sh
-chmod +x ./python3-and-flask.sh
 ./python3-and-flask.sh
 ```
 - It is a good idea to reboot and test the network
