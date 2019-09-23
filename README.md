@@ -58,7 +58,11 @@ sudo vi /etc/default/console-setup
 FONTFACE="Terminus
 FONTSIZE="16x32"
 ```
-
+- Install screen to avoid timout on ssh session
+```
+sudo apt -y install screen
+screen bash
+```
 - Install git and then clone this repository
 ```
 sudo apt-get -y install git
