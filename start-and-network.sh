@@ -16,6 +16,7 @@ echo "================================"
 
 # Step 1: Update packages
 echo "Updating raspian streach packages"
+sudo apt -y update
 sudo apt-get -y update
 sudo apt-get -y upgrade 
 sudo apt-get -y dist-upgrade
