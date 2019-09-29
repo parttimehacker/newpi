@@ -116,6 +116,15 @@ sudo ufw enable
 sudo ufw status
 ```
 
+- Fix netatalk for buster release
+```
+sudo vi /etc/netatalk/afp.conf
+```
+- Add the following at the bottom
+```
+[Homes]
+  basedir regex = /home
+```
 - Reboot again and install **git** and clone the **newpi* repository
 
 ```
