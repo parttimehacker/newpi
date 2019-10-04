@@ -69,7 +69,15 @@ git clone https://github.com/parttimehacker/newpi.git
 cd newpi
 chmod +x *.sh
 ./start-and-network.sh
-./python3-and-flask.sh
+```
+- Raspberry pi buster release has an issue with netatalk. You need to add home to the conf
+```
+sudo vi /etc/netatalk/afp.conf
+```
+- Add the following at the bottom
+```
+[Homes]
+  basedir regex = /home
 ```
 - It is a good idea to reboot and test the network
 
@@ -111,22 +119,13 @@ sudo ufw allow 548
 sudo ufw enable
 sudo ufw status
 ```
-
-- Fix netatalk for buster release
-```
-sudo vi /etc/netatalk/afp.conf
-```
-- Add the following at the bottom
-```
-[Homes]
-  basedir regex = /home
-```
 - Reboot again and install **git** and clone the **newpi* repository
 
 ```
 git clone https://github.com/parttimehacker/newpi.git
 cd newpi
-chmod +x adafruit_scripts.sh
+chmod +x *.sh
+./python_and_flask.sh
 ./adafruit_scripts.sh
 ```
 
