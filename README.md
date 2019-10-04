@@ -33,11 +33,7 @@ key_mgmt=WPA-PSK
 
 ## First step on your Pi
 
-- Login as **pi** and get the latest firmware update (NOTE - this is optional) then reboot again
-```
-sudo rpi-update
-```
-- Now you need to execute raspi-config to set up the following
+- Login as **pi** and execute raspi-config to set up the following
 
   * new password for pi user
   * hostname 
