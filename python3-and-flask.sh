@@ -16,9 +16,9 @@ sudo apt-get -y install python3-gpiozero
 sudo apt-get -y install python-imaging python-pil
 sudo python -m pip install --upgrade pip setuptools wheel
 sudo apt-get -y install git
-sudo pip3 install Pillow
 sudo apt-get -y install libfreetype6-dev libjpeg-dev libopenjp2-7-dev
 sudo apt-get -y install python3-rpi.gpio
+sudo pip3 install Pillow
 echo "================================"
 echo "Python package installation complete"
 sudo sync
