@@ -12,6 +12,7 @@ sudo pip3 install requests
 sudo pip3 install flask-httpauth
 sudo pip3 install paho-mqtt
 sudo pip3 install psutil
+sudo apt-get -y install python3-gpiozero
 sudo apt-get -y install python-imaging python-pil
 sudo python -m pip install --upgrade pip setuptools wheel
 sudo apt-get -y install git
