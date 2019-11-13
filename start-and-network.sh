@@ -60,6 +60,17 @@ sudo apt-get -y install git
 sudo apt-get -y install libfreetype6-dev libjpeg-dev libopenjp2-7-dev
 sudo apt-get -y install python3-rpi.gpio
 sudo pip3 install Pillow
+sudo sync
 echo "================================"
 echo "Python package installation complete"
+echo
+echo "Install firewall installation"
+sudo apt-get install ufw
+sudo ufw allow 22
+sudo ufw allow 548
+sudo ufw enable
+sudo ufw status
 sudo sync
+echo "================================"
+echo "Install firewall complete"
+sudo reboot
