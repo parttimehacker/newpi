@@ -45,7 +45,7 @@ key_mgmt=WPA-PSK
 sudo raspi-config 
 ```
 
-- If the terminal font is too small then you can change it from the command line
+- Optional - If the terminal font is too small then you can change it from the command line
 ```
 sudo vi /etc/default/console-setup 
 ```
@@ -105,30 +105,6 @@ sudo vi /etc/passwd
 
 `sudo deluser -remove-home pi`
 
-- install a firewall
-
-```
-sudo apt-get install ufw`
-```
-
-- enable ssh and afp from the Mac
-
-```
-sudo ufw allow 22
-sudo ufw allow 548
-sudo ufw enable
-sudo ufw status
-```
-- Reboot again and install **git** and clone the **newpi* repository
-
-```
-git clone https://github.com/parttimehacker/newpi.git
-cd newpi
-chmod +x *.sh
-./python_and_flask.sh
-./adafruit_scripts.sh
-```
-
 - Complete the configuration with Python development enviroment and some of my favorite moduels
 
      
@@ -138,9 +114,9 @@ Installation
 Requirements
 
 ```
-chmod +x adafruit_scripts.sh
-./adafruit_scripts.sh
-
+diyid
+diystatus
+```
 Licence
 -------
 
