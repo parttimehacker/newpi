@@ -2,9 +2,11 @@
 
 This repository contains instructions and bash scripts I use to configure new Raspberry Pi headless servers. My process is still too manual but its getting better. I use Etcher to copy the latest image to a SD card. I enable SSH and set up Wi-Fi on the SD card while its still in my laptop. After booting the Pi for the first time I run `sudo raspi-config` to setup passwords, host names, time zone, etc. 
 
-At this point you should clone newpi into the **pi** user home directory. Run the `./step1.sh` bash script to get upgrades and set up file sharing on the network.
+At this point you should clone newpi into the **pi** user home directory. Run the `./start-and-network.sh` bash script to get upgrades and set up file sharing on the network.
 
-I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. Then clone and run `./python3-and-flask.sh` and `./adafruit-scripts.sh` to complete my baseline Raspberry Pi headless server.
+I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. 
+
+At this point you need to git clone your applications.
 
 ## On the Mac
 
@@ -59,18 +61,18 @@ FONTSIZE="16x32"
 sudo apt -y install screen
 screen bash
 ```
-- Install git and then clone this repository
+## Install git and then clone `newpi` repository
 ```
 sudo apt-get -y install git
 git clone https://github.com/parttimehacker/newpi.git
 ```
-- Make start-and-network.sh executable and run this script
+- Make start-and-network.sh executable and run the script
 ```
 cd newpi
 chmod +x *.sh
 ./start-and-network.sh
 ```
-- Raspberry pi buster release has an issue with netatalk. You need to add home to the conf
+- NOTE - Raspberry pi buster release has an issue with netatalk. You need to add home to the conf
 ```
 sudo vi /etc/netatalk/afp.conf
 ```
@@ -105,7 +107,7 @@ sudo vi /etc/passwd
 
 `sudo deluser -remove-home pi`
 
-- Complete the configuration with Python development enviroment and some of my favorite moduels
+- Completes the configuration with Python development enviroment and some of my favorite modules
 
      
 Installation
