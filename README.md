@@ -83,6 +83,9 @@ sudo vi /etc/netatalk/afp.conf
 ```
 - It is a good idea to reboot and test the network
 
+- Optional - test the I2C bus for devices
+`sudo i2cdetect -y 1`
+
 ## Lets add some security
 
 - Create a **newuser** and password
