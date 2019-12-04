@@ -73,4 +73,3 @@ sudo ufw status
 sudo sync
 echo "================================"
 echo "Install firewall complete"
-sudo reboot
