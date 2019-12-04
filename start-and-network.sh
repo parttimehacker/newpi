@@ -65,7 +65,7 @@ echo "================================"
 echo "Python package installation complete"
 echo
 echo "Install firewall installation"
-sudo apt-get install ufw
+sudo apt-get -y install ufw
 sudo ufw allow 22
 sudo ufw allow 548
 sudo ufw enable
