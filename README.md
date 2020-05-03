@@ -11,6 +11,9 @@ At this point you need to git clone your applications.
 ## On the Mac
 
 - Flash the latest Raspberry Pi image to an SD card and then update the mounted boot drive
+```
+sudo /Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher
+```
 
 ```
 cd /Volumes/boot
