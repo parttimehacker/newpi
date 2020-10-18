@@ -47,19 +47,19 @@ sudo apt-get -y install i2c-tools
 sudo apt-get -y install python3-dev python3-pip python3-venv
 sudo -H pip3 install -U pip numpy
 sudo apt-get -y install python3-testresources
-pip3 install pylint
-pip3 install flask 
-pip3 install requests 
-pip3 install flask-httpauth
-pip3 install paho-mqtt
-pip3 install psutil
+sudo pip3 install pylint
+sudo pip3 install flask 
+sudo pip3 install requests 
+sudo pip3 install flask-httpauth
+sudo pip3 install paho-mqtt
+sudo pip3 install psutil
 sudo apt-get -y install python3-gpiozero
 sudo apt-get -y install python-imaging python-pil
 sudo python -m pip install --upgrade pip setuptools wheel
 sudo apt-get -y install git
 sudo apt-get -y install libfreetype6-dev libjpeg-dev libopenjp2-7-dev
 sudo apt-get -y install python3-rpi.gpio
-pip3 install Pillow
+sudo pip3 install Pillow
 sudo sync
 echo "================================"
 echo "Python package installation complete"
