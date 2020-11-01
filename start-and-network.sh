@@ -25,6 +25,7 @@ sudo apt-get -y dist-upgrade
 sudo sync
 echo "Updates and upgrade complete"
 echo "================================"
+echo
 sudo sync
 
 # Step 2: Mac file stuff
@@ -39,6 +40,7 @@ echo -e "\navihi and netatalk installation complete"
 echo "================================"
 echo
 sudo sync
+
 # development step: Python stuff
 echo "Install Python packages"
 sudo apt-get -y install python-pip
@@ -60,9 +62,18 @@ sudo apt-get -y install git
 sudo apt-get -y install libfreetype6-dev libjpeg-dev libopenjp2-7-dev
 sudo apt-get -y install python3-rpi.gpio
 sudo pip3 install Pillow
-sudo sync
 echo "================================"
+echo
+sudo sync
+
+echo "Install screen, etc.
+sudo apt -y install screen
+echo "================================"
+echo
+sudo sync
+
 echo "Python package installation complete"
+echo "================================"
 echo
 echo "Install firewall installation"
 sudo apt-get -y install ufw
