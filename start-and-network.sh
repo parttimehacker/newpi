@@ -66,8 +66,9 @@ echo "================================"
 echo
 sudo sync
 
-echo "Install screen, etc.
+echo "Install screen, postgresql, etc.
 sudo apt -y install screen
+sudo apt-get install -y postgresql libpq-dev python-dev
 echo "================================"
 echo
 sudo sync
