@@ -89,7 +89,7 @@ sudo vi /etc/netatalk/afp.conf
 - Optional - test the I2C bus for devices
 `sudo i2cdetect -y 1`
 
-## Lets add some security
+## Lets add some security and new user
 
 - Create a **newuser** and password
 ```
@@ -115,6 +115,19 @@ sudo vi /etc/passwd
 
 - Completes the configuration with Python development enviroment and some of my favorite modules
 
+## Set up postgresql data base user
+
+- start DB
+
+`sudo -u postgres psql`
+
+- create a user (a ‘role’ in Postgres terminology) and terminate with semicolon
+
+`CREATE ROLE pi WITH LOGIN PASSWORD ‘password’;`
+
+- create a database:
+
+`CREATE DATABASE diyhas WITH OWNER pi;`
      
 Installation
 ------------
