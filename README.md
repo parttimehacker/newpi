@@ -11,6 +11,11 @@ At this point you need to git clone your applications.
 ## On the Mac
 
 - Flash the latest Raspberry Pi image to an SD card and then update the mounted boot drive
+
+Download the Raspberry Pi Image Installer at https://www.raspberrypi.org/downloads/
+
+or use Etcher
+
 ```
 sudo /Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher
 ```
