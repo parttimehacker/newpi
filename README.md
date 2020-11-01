@@ -129,15 +129,10 @@ sudo vi /etc/passwd
 
 `CREATE DATABASE diyhas WITH OWNER pi;`
      
-Installation
+## Install system status service
 ------------
-        
-Requirements
 
-```
-diyid
-diystatus
-```
+
 Licence
 -------
 
