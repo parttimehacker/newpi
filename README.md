@@ -133,6 +133,10 @@ sudo vi /etc/passwd
 - create a database:
 
 `CREATE DATABASE diyhas WITH OWNER pi;`
+
+- exit with
+
+`\q`
      
 ## Install system status service
 ------------
