@@ -132,6 +132,16 @@ sudo vi /etc/passwd
 ## Install system status service
 ------------
 
+`git clone https://github.com/parttimehacker/diystatus.git`
+
+- Follow instructions
+
+```
+cd diystatus
+chmod +x *.sh
+./import.script.sh
+./setup.systemctl.sh diystatus
+```
 
 Licence
 -------
