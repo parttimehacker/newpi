@@ -81,6 +81,7 @@ sudo apt-get -y install ufw
 sudo ufw allow 22
 sudo ufw allow 548
 sudo ufw allow 80
+sudo ufw allow 5000
 sudo ufw enable
 sudo ufw status
 sudo sync
