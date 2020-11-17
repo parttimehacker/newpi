@@ -73,6 +73,16 @@ echo "================================"
 echo
 sudo sync
 
+if [ $1 != "" ]; then
+	sudo useradd -m $1 -G sudo
+	echo -e "$2\n$2\n" | sudo passwd $1
+  echo "Added new user => $1"
+  echo "================================"
+  echo
+else
+	echo "Error: user and password parameters needed"
+fi
+
 echo "Python package installation complete"
 echo "================================"
 echo
